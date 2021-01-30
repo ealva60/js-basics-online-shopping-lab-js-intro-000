@@ -9,6 +9,13 @@ function setCart(c) {
   return cart;
 }
 
+function addToCart(item) {
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  cart.push({itemName: item, itemPrice: Math.round(getRandomArbitrary(1,100))})
+  return `${item} has been added to your cart.`
+}
 
 function total() {
   var total = 0
