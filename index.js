@@ -32,8 +32,8 @@ function viewCart() {
       msg = `${msg} ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
     msg = msg + "."
-    //return msg
-    console.log(msg)
+    return msg
+    //console.log(msg)
   }
 }
 
