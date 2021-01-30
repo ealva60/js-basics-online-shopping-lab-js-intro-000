@@ -70,8 +70,8 @@ function placeOrder(cardNumber) {
   if (cardNumber === "" || cardNumber == undefined) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
-      totis = total()	
+      totis = total()
       cart = []
-      return `Your total cost is $${totis}, which will be charged to the card ${cardNumber}.` 
+      return `Your total cost is $${totis}, which will be charged to the card ${cardNumber}.`
   }
 }
