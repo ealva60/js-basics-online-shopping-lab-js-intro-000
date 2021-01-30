@@ -23,6 +23,7 @@ function viewCart() {
   } else {
     var msg = "In your cart, you have"
     var i=0
+    var items = 0
     for (i = 0, items = 1; i < cart.length; i++, items++) {
       if (i > 0) {
         msg = msg + ","
