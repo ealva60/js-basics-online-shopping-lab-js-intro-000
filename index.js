@@ -18,7 +18,22 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length < 1) {
+    return "Your shopping cart is empty."
+  } else {
+    var msg = "In your cart, you have"
+    for (i = 0, items = 1; i < cart.length; i++, items++) {
+      if (i > 0) {
+        msg = msg + ","
+      }
+      if (cart.length === items && items > 1) {
+        msg = msg + " and"
+      }
+      msg = `${msg} ${cart[i].itemName} at $${cart[i].itemPrice}`      
+    }
+    msg = msg + "."
+    return msg 	
+  }
 }
 
 function total() {
