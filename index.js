@@ -29,10 +29,10 @@ function viewCart() {
       if (cart.length === items && items > 1) {
         msg = msg + " and"
       }
-      msg = `${msg} ${cart[i].itemName} at $${cart[i].itemPrice}`      
+      msg = `${msg} ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
     msg = msg + "."
-    return msg 	
+    return msg
   }
 }
 
